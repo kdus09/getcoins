@@ -173,6 +173,24 @@ body {
   padding: 10px 0;
 }
 
+.customInput {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1.5px solid #ccc;
+  margin-top: 8px;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.customInput:focus {
+  border-color: #fe2c55;
+  box-shadow: 0 0 0 3px rgba(254,44,85,0.15);
+  outline: none;
+}
+
+
 .icon {
   height: 70px; /* to hơn rõ ràng */
   width: auto;
@@ -242,4 +260,47 @@ body {
 @keyframes dash {
   0% { stroke-dashoffset: 1000; }
   100% { stroke-dashoffset: 0; }
+}
+
+.customInput {
+  margin-top: 6px;
+  padding: 10px;
+  width: 90%;
+  border: 1.5px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+.customInput:focus {
+  border-color: #fe2c55;
+  box-shadow: 0 0 0 2px rgba(254,44,85,0.2);
+}
+.customPrice {
+  margin-top: 4px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Rounded payment logos */
+.payment-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+.payment-icons img {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  padding: 6px;
+  height: 40px;
+  width: auto;
+  transition: 0.25s ease;
+}
+.payment-icons img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25);
 }
