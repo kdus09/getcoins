@@ -1,0 +1,20 @@
+{
+  "name": "Get Coins",
+  "short_name": "GetCoins",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fe2c55",
+  "icons": [
+    {
+      "src": "icons/tiktok-coin.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/tiktok-coin.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
