@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get Coins — Mock V5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" class="logo" alt="TikTok">
+      <div>
+        <div class="line1">Get Coins — Mock v5</div>
+        <div class="balance">Balance: <span id="balanceDisplay">0</span> coins</div>
+      </div>
+    </div>
+
+    <div class="box input-box">
+      <input id="username" placeholder="@username" />
+    </div>
+
+    <div class="box">
+      <div class="heading">Recharge</div>
+      <p class="note">Save around 25% with a lower third-party service fee.</p>
+      <div id="packs" class="packs"></div>
+      <div class="buy-row">
+        <button id="btnPay" class="buy-btn">Buy</button>
+      </div>
+
+      <div class="offers">
+        <p>Invite & Get Rewards</p>
+        <p>Add this page to the mobile desktop for easy access</p>
+      </div>
+
+      <div class="payment-icons">
+  <img class="icon" src="icons/applepay.svg" alt="Apple Pay">
+  <img class="icon" src="icons/visa.svg" alt="Visa">
+  <img class="icon" src="icons/Mastercard-logo.png" alt="MasterCard">
+  <img class="icon" src="icons/PayPal.svg" alt="PayPal">
+  <img class="icon" src="icons/googlepay (1).svg" alt="Google Pay">
+</div>
+
+    <footer class="footer">© 2025 TikTok MockV5 . Dev by Le The Khoi</footer>
+  </div>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <div class="popup-header">
+        <span>Payment result</span>
+      </div>
+      <svg id="successIcon" viewBox="0 0 130.2 130.2" class="checkmark">
+        <circle class="path circle" fill="none" stroke="#4BB543" stroke-width="6" cx="65.1" cy="65.1" r="62.1"/>
+        <polyline class="path check" fill="none" stroke="#4BB543" stroke-width="6" points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+      </svg>
+      <div id="popupMsg" class="popup-msg"></div>
+    </div>
+  </div>
+
+  <audio id="ting" src="ting.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

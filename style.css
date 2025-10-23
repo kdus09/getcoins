@@ -1,0 +1,235 @@
+:root {
+  --accent: #fe2c55;
+  --success: #4BB543;
+  --muted: #777;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
+
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px 18px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px; /* thêm khoảng cách với phần user */
+}
+
+.logo {
+  width: 100px; /* to hơn */
+  height: auto;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+}
+
+.line1 {
+  font-weight: 800;
+  font-size: 26px;
+  color: #111;
+  letter-spacing: 0.3px;
+}
+
+.balance {
+  color: #fe2c55;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.input-box {
+  margin-top: 10px; /* đẩy phần nhập user xuống một chút */
+  margin-bottom: 18px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 16px;
+  border: 1.5px solid #ccc;
+  font-size: 18px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.2s;
+}
+.input-box input:focus {
+  outline: none;
+  border-color: #fe2c55;
+  box-shadow: 0 0 0 3px rgba(254,44,85,0.15);
+}
+.heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.icon {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 0.3px #aaa);
+}
+
+.note {
+  color: #f43f5e;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.packs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.coin-icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.pack .coin {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.pack .price {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.pack {
+  border: 1.5px solid #ccc;
+  border-radius: 12px;
+  text-align: center;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.pack.selected {
+  border-color: var(--success);
+  background: #ecfff1;
+}
+
+.pack .count {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.pack .coin {
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.buy-row {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.buy-btn {
+  background: var(--accent);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.buy-btn:disabled {
+  opacity: 0.6;
+}
+
+.payment-icons {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.icon {
+  height: 30px;
+  filter: drop-shadow(0 0 0.3px #aaa);
+}
+
+.footer {
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  padding-bottom: 12px;
+}
+
+/* popup */
+.popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.35);
+  z-index: 999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 22px;
+  border-radius: 16px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.popup-header {
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-msg {
+  font-weight: 600;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+/* Checkmark animation */
+.checkmark {
+  width: 86px;
+  height: 86px;
+  margin: 10px auto;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+  animation: dash 0.9s ease-in-out forwards;
+}
+
+@keyframes dash {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
