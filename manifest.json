@@ -7,12 +7,12 @@
   "theme_color": "#fe2c55",
   "icons": [
     {
-      "src": "icons/tiktok-coin.png",
+      "src": "icons/tiktok-c.jpg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "icons/tiktok-coin.png",
+      "src": "icons/tiktok-c.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
